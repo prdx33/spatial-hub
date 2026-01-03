@@ -1,0 +1,21 @@
+{
+  "name": "spatial-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @spatial-hub/web dev",
+    "dev:daemon": "pnpm --filter @spatial-hub/daemon dev",
+    "dev:all": "pnpm run --parallel dev dev:daemon",
+    "build": "pnpm --filter @spatial-hub/web build",
+    "build:daemon": "pnpm --filter @spatial-hub/daemon build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
